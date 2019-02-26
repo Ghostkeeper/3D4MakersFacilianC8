@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fdmmaterial xmlns="http://www.ultimaker.com/material" xmlns:cura="http://www.ultimaker.com/cura" version="1.3">
+    <metadata>
+        <name>
+            <brand>3D4Makers</brand>
+            <material>TPLA</material>
+            <color>Light Gray</color>
+            <label>Facilan C8</label>
+        </name>
+        <GUID>ddb37aac-cec9-4429-99e2-aa661ec220b7d</GUID>
+        <version>1</version>
+        <color_code>#AAAAAA</color_code>
+        <description>Facilan C8 has better mechanical qualities and high tolerances that combine to make a material suited for high throughput and high repeatability production in Additive Manufacturing.</description>
+        <adhesion_info>Print on glass or use a PEI sheet.</adhesion_info>
+    </metadata>
+    <properties>
+        <density>1.4</density>
+        <diameter>2.85</diameter>
+    </properties>
+    <settings>
+        <setting key="print temperature">210</setting>
+        <setting key="heated bed temperature">50</setting>
+        <setting key="standby temperature">100</setting>
+        <setting key="adhesion tendency">0</setting>
+        <setting key="surface energy">100</setting>
+        <cura:setting key="adhesion_type">brim</cura:setting>
+        <cura:setting key="cool_lift_head">True</cura:setting>
+        <cura:setting key="cool_min_layer_time">5</cura:setting>
+        <cura:setting key="gradual_infill_steps">2</cura:setting>
+        <cura:setting key="infill_pattern">trihexagon</cura:setting>
+        <cura:setting key="infill_sparse_thickness">=math.floor(machine_nozzle_size * 2 / 3 / layer_height) * layer_height</cura:setting>
+        <cura:setting key="optimize_wall_printing_order">True</cura:setting>
+        <cura:setting key="retraction_min_travel">2</cura:setting>
+        <cura:setting key="skin_line_width">=machine_nozzle_size * 2 / 3</cura:setting>
+        <cura:setting key="speed_print_layer_0">=round(speed_print * 10 / 60)</cura:setting>
+        <cura:setting key="speed_print">50</cura:setting>
+        <cura:setting key="speed_topbottom">=round(speed_print * 30 / 60)</cura:setting>
+        <cura:setting key="speed_wall">=speed_print</cura:setting>
+        <cura:setting key="speed_wall_0">=round(speed_wall * 40 / 60)</cura:setting>
+        <cura:setting key="speed_wall_x">=speed_wall</cura:setting>
+        <cura:setting key="top_bottom_pattern_0">concentric</cura:setting>
+        <cura:setting key="top_bottom_thickness">1.2</cura:setting>
+        <cura:setting key="wall_thickness">=wall_line_width_0 + wall_line_width_x * 2</cura:setting>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+"/>
+            <hotend id="0.25 mm">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="print temperature">205</setting>
+            </hotend>
+            <hotend id="0.4 mm">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="0.6 mm">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="0.8 mm">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+        </machine>
+    </settings>
+</fdmmaterial>
